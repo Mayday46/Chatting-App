@@ -11,25 +11,15 @@ function App() {
         const { name, value } = event.target; // Destructur
 
         setContact((prevValue) => {
-        if (name === "fName") {
             return {
-            fName: value,
-            lName: prevValue.lName,
-            email: prevValue.email,
+                // Spread operator
+                // This will copy all the previous values of the object
+                // and then update the value of the name that is being changed.
+                // This way we can update the value of any input field without
+                // affecting the other fields.
+                ...prevValue,
+                [name]: value,
             };
-        } else if (name === "lName") {
-            return {
-            fName: prevValue.fName,
-            lName: value,
-            email: prevValue.email,
-            };
-        } else if (name === "email") {
-            return {
-            fName: prevValue.fName,
-            lName: prevValue.lName,
-            email: value,
-            };
-        }
         });
     }
 
