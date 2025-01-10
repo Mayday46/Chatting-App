@@ -23,6 +23,13 @@ body {
     text-align: center;
 }
 
+.hyperlink {
+    text-align: center;
+    position: relative;
+    left: -55px;
+    
+}
+
 .container h1 {
     font-size: 40px;
     font-weight: 200;

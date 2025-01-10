@@ -11,7 +11,12 @@ function Login() {
                 <input type="password" placeholder="Password" />
                 <button type="submit"> Login </button>
             </form>
+
+            <div className = "hyperlink">
+                <a href="www.google.com"> Click here to Register. </a>
+            </div>
         </div>
+
     );
 }
 
