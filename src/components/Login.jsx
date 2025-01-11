@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 
 // Create a Login component
 // This page is designed to take the username and password from the user.
+// Todo:
+// 1. Needs to have a Forget Username/Password hyperlink for user to reset their Username and password.
+// 2. Implementing a small check box of Remember me
+// 3.
 
 function Login() {
 
